@@ -1,0 +1,24 @@
+# Secrets: your real keys live here. Commit .env.example instead.
+.env
+.env.*
+!.env.example
+
+# Local runtime data: database (chats, people, API keys added in Settings), uploaded knowledge files, logo
+data/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Reference material from the original demo (not part of the app)
+_video_review/
+Demo.mp4
+Qwen 3.7 Max Response To My Query.txt
+
+# OS / editor clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/

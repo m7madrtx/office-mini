@@ -1,0 +1,118 @@
+{
+  "name": "My House",
+  "floorHeight": 3.2,
+  "wallHeight": 3.0,
+  "floors": [
+    {
+      "id": "ground",
+      "name": {"en": "Ground floor", "ar": "الدور الأرضي"},
+      "spawn": {"x": 2.8, "z": 7.0, "yaw": -90},
+      "rooms": [
+        {"id": "hall", "name": {"en": "Entrance", "ar": "المدخل"}, "x0": 0, "x1": 4, "z0": 3, "z1": 10,
+         "floor": "#e2dfd8", "wall": "#f4f4f1",
+         "furniture": [
+           {"type": "plant", "x": 3.6, "z": 9.6},
+           {"type": "floor_lamp", "x": 3.65, "z": 5.0}
+         ]},
+        {"id": "wc", "name": {"en": "Guest WC", "ar": "حمام الضيوف"}, "x0": 0, "x1": 4, "z0": 0, "z1": 3,
+         "floor": "#d6d9dc", "wall": "#eef1f3",
+         "furniture": [
+           {"type": "toilet", "x": 0.6, "z": 0.45},
+           {"type": "bathroom_sink", "x": 2.0, "z": 0.32}
+         ]},
+        {"id": "living", "name": {"en": "Living room", "ar": "الصالة"}, "x0": 4, "x1": 14, "z0": 4, "z1": 10,
+         "floor": "#dcd8d1", "wall": "#f6f6f4",
+         "furniture": [
+           {"type": "tv_wall", "x": 13.72, "z": 7.0, "rot": -90},
+           {"type": "sofa_l", "x": 8.4, "z": 7.0, "rot": 90},
+           {"type": "rug", "x": 10.6, "z": 7.0, "rot": 90},
+           {"type": "coffee_table", "x": 10.6, "z": 7.0},
+           {"type": "tree", "x": 4.8, "z": 9.3},
+           {"type": "plant", "x": 13.5, "z": 9.5},
+           {"type": "plant", "x": 13.5, "z": 4.5},
+           {"type": "curtain", "x": 9.0, "z": 9.88, "rot": 180, "w": 4.2}
+         ]},
+        {"id": "kitchen", "name": {"en": "Kitchen", "ar": "المطبخ"}, "x0": 4, "x1": 10, "z0": 0, "z1": 4,
+         "floor": "#dcd8d1", "wall": "#f6f6f4",
+         "furniture": [
+           {"type": "kitchen_counter", "x": 7.0, "z": 0.36, "w": 5.4},
+           {"type": "kitchen_island", "x": 7.0, "z": 2.3}
+         ]},
+        {"id": "print_room", "name": {"en": "3D print room", "ar": "غرفة الطابعات"}, "x0": 10, "x1": 14, "z0": 0, "z1": 4,
+         "floor": "#d9d6d0", "wall": "#f3f3f0",
+         "furniture": [
+           {"type": "printer_cabinet", "x": 12.0, "z": 0.34},
+           {"type": "desk", "x": 13.35, "z": 2.4, "rot": -90},
+           {"type": "plant", "x": 10.45, "z": 0.45}
+         ]}
+      ],
+      "doors": [
+        {"id": "front", "x": 2.6, "z": 10, "axis": "x", "width": 1.1, "kind": "door"},
+        {"id": "wc", "x": 3.2, "z": 3, "axis": "x", "width": 0.9, "kind": "door"},
+        {"id": "hall_living", "x": 4, "z": 7, "axis": "z", "width": 1.8, "kind": "opening"},
+        {"id": "kitchen_living", "x": 7, "z": 4, "axis": "x", "width": 5, "kind": "opening"},
+        {"id": "print_room", "x": 12, "z": 4, "axis": "x", "width": 1.0, "kind": "door"}
+      ],
+      "windows": [
+        {"x": 9, "z": 10, "axis": "x", "width": 4},
+        {"x": 7, "z": 0, "axis": "x", "width": 2.2},
+        {"x": 14, "z": 2, "axis": "z", "width": 1.4}
+      ],
+      "stairs": {"x0": 0.08, "x1": 1.3, "z0": 3.4, "z1": 8.4, "dir": "-z"}
+    },
+    {
+      "id": "first",
+      "name": {"en": "First floor", "ar": "الدور الأول"},
+      "spawn": {"x": 2.5, "z": 1.7, "yaw": -90},
+      "rooms": [
+        {"id": "landing", "name": {"en": "Landing", "ar": "الصالة العلوية"}, "x0": 0, "x1": 4, "z0": 0, "z1": 3.4,
+         "floor": "#e2dfd8", "wall": "#f4f4f1",
+         "furniture": [
+           {"type": "plant", "x": 3.6, "z": 0.45},
+           {"type": "bookshelf", "x": 1.6, "z": 0.25}
+         ]},
+        {"id": "corridor", "name": {"en": "Corridor", "ar": "الممر"}, "x0": 4, "x1": 14, "z0": 0, "z1": 2,
+         "floor": "#e2dfd8", "wall": "#f4f4f1",
+         "furniture": [
+           {"type": "plant", "x": 13.55, "z": 0.45}
+         ]},
+        {"id": "bedroom", "name": {"en": "Master bedroom", "ar": "غرفة النوم"}, "x0": 4, "x1": 9, "z0": 2, "z1": 10,
+         "floor": "#cdb79e", "wall": "#f3efe9",
+         "furniture": [
+           {"type": "bed", "x": 6.5, "z": 8.75, "rot": 180},
+           {"type": "wardrobe", "x": 8.65, "z": 4.6, "rot": -90},
+           {"type": "rug", "x": 6.5, "z": 6.6},
+           {"type": "curtain", "x": 4.12, "z": 6.0, "rot": 90, "w": 2.2},
+           {"type": "floor_lamp", "x": 4.5, "z": 9.5}
+         ]},
+        {"id": "bath", "name": {"en": "Bathroom", "ar": "الحمام"}, "x0": 9, "x1": 14, "z0": 2, "z1": 5.5,
+         "floor": "#d6d9dc", "wall": "#eef1f3",
+         "furniture": [
+           {"type": "bathroom_sink", "x": 11.3, "z": 2.32},
+           {"type": "toilet", "x": 12.4, "z": 2.45},
+           {"type": "shower", "x": 13.42, "z": 2.6}
+         ]},
+        {"id": "office", "name": {"en": "Home office", "ar": "المكتب"}, "x0": 9, "x1": 14, "z0": 5.5, "z1": 10,
+         "floor": "#cdb79e", "wall": "#f4f4f1",
+         "furniture": [
+           {"type": "desk", "x": 12.4, "z": 9.45, "rot": 180},
+           {"type": "bookshelf", "x": 13.72, "z": 7.4, "rot": -90},
+           {"type": "plant", "x": 9.5, "z": 9.55}
+         ]}
+      ],
+      "doors": [
+        {"id": "landing_corridor", "x": 4, "z": 1, "axis": "z", "width": 1.6, "kind": "opening"},
+        {"id": "stair_exit", "x": 0.69, "z": 3.4, "axis": "x", "width": 1.22, "kind": "opening"},
+        {"id": "bedroom", "x": 6.5, "z": 2, "axis": "x", "width": 1.0, "kind": "door"},
+        {"id": "bath", "x": 9.8, "z": 2, "axis": "x", "width": 0.9, "kind": "door"},
+        {"id": "office", "x": 9, "z": 7.5, "axis": "z", "width": 0.9, "kind": "door"}
+      ],
+      "windows": [
+        {"x": 9, "z": 0, "axis": "x", "width": 3},
+        {"x": 4, "z": 6, "axis": "z", "width": 2.2},
+        {"x": 11, "z": 10, "axis": "x", "width": 2},
+        {"x": 14, "z": 4.3, "axis": "z", "width": 0.8}
+      ]
+    }
+  ]
+}

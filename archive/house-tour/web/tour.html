@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#f2f2f0">
+  <title>House Tour</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tour.css">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <div id="view"></div>
+
+  <div class="bar">
+    <a class="btn back" href="index.html">‹ <span data-i18n="back">Office</span></a>
+    <h1 data-i18n="tourTitle">3D House Tour</h1>
+  </div>
+  <div class="tools">
+    <button class="btn" id="mapBtn" data-i18n="map">Map</button>
+    <button class="btn" id="topBtn" data-i18n="topView">Top view</button>
+    <button class="btn" id="nightBtn">Night</button>
+    <button class="btn" id="floorBtn">Ground floor</button>
+  </div>
+  <div class="help" id="help" data-i18n="help"></div>
+
+  <div class="joystick" id="joy"><div class="knob" id="knob"></div></div>
+  <button class="context" id="context" hidden></button>
+
+  <div class="map" id="map" hidden><canvas id="mapCanvas"></canvas></div>
+  <div class="loading" id="loading" data-i18n="loading">Building the house…</div>
+
+  <script type="module" src="js/tour.js"></script>
+</body>
+</html>
